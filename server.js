@@ -8,7 +8,7 @@ dotenv.config()
 
 const app = express();
 app.use(cors())
-app.use('/public',express.static('public'))
+// app.use('/public',express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 app.get('/', (req, res) => {
    const {searchQuery} = req.query
